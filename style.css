@@ -4,6 +4,8 @@ body {
 
 p {
     color: brown;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 200px;
 }
 
 h2 {
