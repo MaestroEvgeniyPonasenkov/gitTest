@@ -1,9 +1,42 @@
+h1 {
+  text-align: center;
+  margin-top: 100px;
+}
+button {
+  display: block;
+}
+
+form {
+  width: 500px;
+  margin: 20px auto;
+}
+
+label,
+input {
+  display: block;
+  margin: 10px 0;
+  font-size: 20px;
+}
+
 .table-sortable {
   border-spacing: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  margin-bottom: auto;
+  width: 600px;
+  height: 300px;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .table-sortable th {
   cursor: pointer;
+  background-color: aquamarine;
+}
+
+.table-sortable td {
+  background-color: rgb(127, 209, 142);
 }
 
 .table-sortable .th-sort-asc::after {
