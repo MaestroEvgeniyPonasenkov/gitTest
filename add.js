@@ -1,14 +1,17 @@
+"use strict";
+
 const formEl = document.querySelector("form");
 const tbodyEl = document.querySelector("tbody");
 const tableEl = document.querySelector("table");
-function onAddage(e) {
+let rank = 1;
+function onAddage(e) {  
   e.preventDefault();
   const age = document.getElementById("age").value;
   const name = document.getElementById("name").value;
   const occupation = document.getElementById("occupation").value;
   tbodyEl.innerHTML += `
             <tr>
-                <td>rank</td>
+                <td>${rank++}</td>
                 <td>${name}</td>
                 <td>${age}</td>
                 <td>${occupation}</td>
