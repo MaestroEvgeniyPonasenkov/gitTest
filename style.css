@@ -1,6 +1,11 @@
+body {
+  background-color: cornsilk;
+}
+
 h1 {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
+  background-color: antiquewhite;
 }
 
 .add {
@@ -19,6 +24,7 @@ form {
   margin-top: auto;
   margin-bottom: auto;
   text-align: center;
+  background-color: aquamarine;
 }
 
 label,
@@ -33,24 +39,37 @@ input {
 }
 
 .table-sortable {
+  table-layout: fixed;
   border-spacing: 0;
+  border: 1px solid #dddddd;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10%;
-  margin-bottom: auto;
-  width: auto;
+  margin-top: 5%;
+  margin-bottom: 20px;
+  width: 80%;
   height: auto;
   text-align: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .table-sortable th {
+  border: 1px solid #dddddd;
+  font-weight: bold;
+	padding: 5px;
   cursor: pointer;
   background-color: aquamarine;
 }
 
 .table-sortable td {
-  background-color: rgb(127, 209, 142);
+  border: 1px solid #dddddd;
+  padding: 5px;
+}
+
+.table-sortable tbody tr:nth-child(odd){
+	background-color: rgb(127, 209, 142);;
+}
+.table-sortable tbody tr:nth-child(even){
+	background-color: rgb(34, 242, 72);;
 }
 
 .table-sortable .th-sort-asc::after {
