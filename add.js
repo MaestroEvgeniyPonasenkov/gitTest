@@ -15,7 +15,7 @@ function onAddage(e) {
                 <td>${name}</td>
                 <td>${age}</td>
                 <td>${occupation}</td>
-                <td><button class="deleteBtn">Delete</button></td>
+                <td><button class="deleteBtn">Удалить</button></td>
             </tr>
         `;
 }
