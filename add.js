@@ -4,7 +4,7 @@ const formEl = document.querySelector("form");
 const tbodyEl = document.querySelector("tbody");
 const tableEl = document.querySelector("table");
 let rank = 1;
-function onAddage(e) {  
+function onAddage(e) {
   e.preventDefault();
   const age = document.getElementById("age").value;
   const name = document.getElementById("name").value;
