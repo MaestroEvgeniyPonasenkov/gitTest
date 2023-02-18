@@ -1,39 +1,25 @@
-table {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
-  font-size: 14px;
-  border-radius: 10px;
+.table-sortable {
   border-spacing: 0;
-  text-align: center;
-  width: 100%;
 }
-th {
-  background: #bcebdd;
-  color: rgb(12, 4, 249);
-  padding: 10px 20px;
+
+.table-sortable th {
+  cursor: pointer;
 }
-th,
-td {
-  border-style: solid;
-  border-width: 0 1px 1px 0;
-  border-color: white;
+
+.table-sortable .th-sort-asc::after {
+  content: "\25b4";
 }
-th:first-child {
-  border-top-left-radius: 10px;
+
+.table-sortable .th-sort-desc::after {
+  content: "\25be";
 }
-th:last-child {
-  border-top-right-radius: 10px;
-  border-right: none;
+
+.table-sortable .th-sort-asc::after,
+.table-sortable .th-sort-desc::after {
+  margin-left: 5px;
 }
-td {
-  padding: 10px 20px;
-  background: #f8e391;
-}
-tr:last-child td:first-child {
-  border-radius: 0 0 0 10px;
-}
-tr:last-child td:last-child {
-  border-radius: 0 0 10px 0;
-}
-tr td:last-child {
-  border-right: none;
+
+.table-sortable .th-sort-asc,
+.table-sortable .th-sort-desc {
+  background: rgba(74, 109, 216, 0.1);
 }
